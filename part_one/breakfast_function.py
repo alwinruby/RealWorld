@@ -8,9 +8,9 @@ def mix_and_cook():
     print('Flipping it!')
     print('Cooking the other side')
 
-def make_omelette():
+def make_omelette(ingredient):
     mix_and_cook()
-    omelette = 'a tasty omelette'
+    omelette = 'a {} omelette'.format(ingredient)
     return omelette
 
 def make_pancake():
@@ -18,7 +18,16 @@ def make_pancake():
     pancake = 'a delicious pancake'
     return pancake
 
-# make some breakfast
-print(make_omelette())
+def fancy_omelette(*ingredients):
+    mix_and_cook()
+    omelette = 'a fancy omelette with {} ingredients'.format(len(ingredients))
+    return omelette
+
+# make some regular omelettes
+print(make_omelette('bacon'))
 print()
-print(make_pancake())
+print(make_omelette('spam'))
+print()
+
+# make Olivia's fancy omelette
+print(fancy_omelette('sausage', 'onion', 'pepper', 'spinach', 'mushroom', 'tomato', 'goat cheese'))
