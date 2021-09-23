@@ -1,4 +1,4 @@
-# Quiz One
+# Quiz One - Functions
 
 In the kitchen a "make omelette" function decreases the stress on your memory by compressing many steps into one idea. In the coding world, what is the advantage of the "make_omelette" function?
 
