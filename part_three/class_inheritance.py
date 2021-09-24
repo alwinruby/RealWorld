@@ -33,6 +33,11 @@ class Motorcycle(Vehicle):  # Inherits from Vehicle class
     def helmet(self):
         print('Nice and safe!')
 
+class ECar(Car): # Inherits from Car class
+
+    # an eco-friendly drive method
+    def drive(self):
+        print('The {} {} goes ssshhhhh!'.format(self.color, self.manuf))
 
 # create car & motorcycle objects
 my_car = Car('red', 'Mercedes')
@@ -52,3 +57,13 @@ my_car.radio()
 my_car.window()
 my_mc.helmet()
 # my_mc.window() # windows do not exist on motorcycles
+
+
+# create and use an electric car
+my_ecar = ECar('white','Nissan')
+my_ecar.window()
+my_ecar.radio()
+my_ecar.drive()
+
+# access the lingering gas tank
+print(my_ecar.gas)
